@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.6.1",
     "bcryptjs": "^3.0.3",
     "date-fns": "^4.1.0",
     "lucide-react": "^0.563.0",
