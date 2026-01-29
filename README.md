@@ -102,4 +102,4 @@ Access the admin panel at [http://localhost:3000/master/login](http://localhost:
 - *Avoid the blue obstacles!*
 
 ---
-Build with  ❤️ for Union of Malabar CET 2K25-26 by dheeraj p
+Build with  ❤️ for Union of Malabar CET 2K25-26 by Dheeraj p
