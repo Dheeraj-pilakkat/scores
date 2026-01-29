@@ -7,6 +7,7 @@ interface Stats {
   totalEvents: number;
   completedEvents: number;
   leadingGroup: string;
+  pendingEvents: number;
 }
 
 interface Group {
@@ -39,7 +40,8 @@ export default function AdminDashboard() {
         setStats({
           totalEvents: events.length,
           completedEvents: completed,
-          leadingGroup: leader
+          leadingGroup: leader,
+          pendingEvents: events.length-completed || 0,
         });
       } catch (error) {
         console.error('Failed to fetch dashboard data', error);
@@ -92,8 +94,13 @@ export default function AdminDashboard() {
               <Calendar className="w-6 h-6 text-purple-400" />
             </div>
           </div>
-          <div className="mt-4 text-sm text-gray-400">
+          <div className="mt-4 text-sm text-gray-400 flex justify-between">
+            <div>
             {stats?.completedEvents} completed
+            </div>
+            <div>
+            {stats?.pendingEvents} pending
+            </div>
           </div>
         </div>
 

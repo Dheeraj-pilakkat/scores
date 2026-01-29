@@ -330,6 +330,11 @@ export default function Home() {
                 </div>
             </section>
         </div>
+        <footer className="mt-24 py-8 text-center">
+            <p className={`text-sm text-gray-500 font-medium tracking-wide ${orbitron.className}`}>
+                Build with ❤️ for Union of Malabar CET 2K25-26 by <span className="text-blue-400">Dheeraj</span>
+            </p>
+        </footer>
       </main>
     </div>
     </>
