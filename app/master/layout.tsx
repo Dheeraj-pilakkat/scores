@@ -11,16 +11,16 @@ export default function AdminLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const isLoginPage = pathname === '/admin/login';
+  const isLoginPage = pathname === '/master/login';
 
   if (isLoginPage) {
     return <SessionProvider>{children}</SessionProvider>;
   }
 
   const navItems = [
-    { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
-    { href: '/admin/events', label: 'Events', icon: Trophy },
-    { href: '/admin/groups', label: 'Groups', icon: Users },
+    { href: '/master', label: 'Dashboard', icon: LayoutDashboard },
+    { href: '/master/events', label: 'Events', icon: Trophy },
+    { href: '/master/groups', label: 'Groups', icon: Users },
   ];
 
   return (

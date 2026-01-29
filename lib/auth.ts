@@ -43,7 +43,7 @@ export const authOptions: NextAuthOptions = {
     strategy: 'jwt',
   },
   pages: {
-    signIn: '/admin/login',
+    signIn: '/master/login',
   },
   callbacks: {
     async session({ session, token }) {

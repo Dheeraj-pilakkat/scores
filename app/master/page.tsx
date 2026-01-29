@@ -55,7 +55,7 @@ export default function AdminDashboard() {
 
   const handleRecalculate = async () => {
     try {
-        const res = await fetch('/api/admin/recalculate', { method: 'POST' });
+        const res = await fetch('/api/master/recalculate', { method: 'POST' });
         if (res.ok) {
             window.location.reload(); // Simple reload to refresh data
         } else {

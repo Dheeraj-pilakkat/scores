@@ -3,13 +3,13 @@ import { withAuth } from "next-auth/middleware";
 export default withAuth({
   callbacks: {
     authorized: ({ req, token }) => {
-      // Protect /admin routes
-      if (req.nextUrl.pathname.startsWith("/admin")) {
+      // Protect /master routes
+      if (req.nextUrl.pathname.startsWith("/master")) {
         // Allow access to login page without token
-        if (req.nextUrl.pathname === "/admin/login") {
+        if (req.nextUrl.pathname === "/master/login") {
           return true;
         }
-        // Require token for other admin routes
+        // Require token for other master routes
         return !!token;
       }
       return true;
@@ -18,5 +18,5 @@ export default withAuth({
 });
 
 export const config = {
-  matcher: ["/admin/:path*"],
+  matcher: ["/master/:path*"],
 };
