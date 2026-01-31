@@ -302,7 +302,7 @@ export default function Home() {
                                                 <div className="text-sm font-medium text-gray-300 text-center leading-tight">
                                                     {event.second_place || '-'}
                                                 </div>
-                                                <div className='text-sm font-bold text-yellow-400 text-center leading-tight'>{event.points_awarded.second}</div>
+                                                <div className='text-sm font-bold text-gray-400 text-center leading-tight'>{event.points_awarded.second}</div>
                                             </div>
 
                                             {/* 3rd Place */}
@@ -311,7 +311,7 @@ export default function Home() {
                                                 <div className="text-sm font-medium text-gray-400 text-center leading-tight">
                                                     {event.third_place || '-'}
                                                 </div>
-                                                <div className='text-sm font-bold text-yellow-400 text-center leading-tight'>{event.points_awarded.third}</div>
+                                                <div className='text-sm font-bold text-gray-400 text-center leading-tight'>{event.points_awarded.third}</div>
                                             </div>
                                         </div>
                                     ) : (
