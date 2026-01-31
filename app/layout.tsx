@@ -4,7 +4,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "Multi-Group Scoreboard",
+  title: "Malabar cet union 2K25-26 Scoreboard",
   description: "Dynamic scoreboard for Arts, Sports, and Games",
 };
 
