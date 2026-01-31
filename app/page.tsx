@@ -45,10 +45,8 @@ export default function Home() {
       }
     };
 
-    fetchData(); // Initial load
-
-    
-        fetchData(true);
+    // fetchData(); 
+    fetchData(true);
   
   }, []);
 
