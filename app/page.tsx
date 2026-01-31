@@ -47,12 +47,9 @@ export default function Home() {
 
     fetchData(); // Initial load
 
-    // Poll every 10 seconds
-    const intervalId = setInterval(() => {
+    
         fetchData(true);
-    }, 3000);
-
-    return () => clearInterval(intervalId);
+  
   }, []);
 
   const filteredEvents = events.filter(event => {
