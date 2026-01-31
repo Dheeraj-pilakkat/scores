@@ -50,7 +50,7 @@ export default function Home() {
     // Poll every 10 seconds
     const intervalId = setInterval(() => {
         fetchData(true);
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(intervalId);
   }, []);
