@@ -293,7 +293,6 @@ export default function Home() {
                                                 <div className={`text-sm md:text-base font-bold text-yellow-400 text-center leading-tight ${orbitron.className}`}>
                                                     {event.first_place || '-'}
                                                 </div>
-                                                <div className='text-sm font-medium text-gray-300 text-center leading-tight'>{event.points_awarded.first || '-'}</div>
                                             </div>
                                             
                                             {/* 2nd Place */}
@@ -302,7 +301,6 @@ export default function Home() {
                                                 <div className="text-sm font-medium text-gray-300 text-center leading-tight">
                                                     {event.second_place || '-'}
                                                 </div>
-                                                <div className='text-sm font-medium text-gray-300 text-center leading-tight'    >{event.points_awarded.second || '-'}</div>
                                             </div>
 
                                             {/* 3rd Place */}
@@ -311,7 +309,6 @@ export default function Home() {
                                                 <div className="text-sm font-medium text-gray-400 text-center leading-tight">
                                                     {event.third_place || '-'}
                                                 </div>
-                                                <div className='text-sm font-medium text-gray-300 text-center leading-tight'>{event.points_awarded.third || '-'}</div>
                                             </div>
                                         </div>
                                     ) : (
