@@ -149,7 +149,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto space-y-20">
             
             {/* Hero Section */}
-            <section className="space-y-12 animate-in fade-in slide-in-from-bottom-8 duration-700">
+            <section className=" animate-in fade-in slide-in-from-bottom-8 duration-700">
                 <div className="text-center space-y-4">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-500 text-xs font-bold uppercase tracking-widest mb-2">
                         <span className="relative flex h-2 w-2">
