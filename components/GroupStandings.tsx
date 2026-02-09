@@ -34,7 +34,7 @@ export default function GroupStandings({ groups }: { groups: Group[] }) {
     <div className="w-full max-w-7xl mx-auto py-12 px-4">
        {/* Horizontal Scroll Container */}
        <div className="w-full pb-8">
-          <div className="flex flex-row items-end justify-center gap-0 h-[500px] px-4 pt-12">
+          <div className="flex flex-row items-end justify-center gap-0 h-[500px] px-4 pt-12 pb-5 bg-gray-900/20 backdrop-blur-sm rounded-xl border border-white/5">
             
             {pyramidGroups.map((group) => {
               // Recalculate rank for display based on original sorted array
@@ -59,10 +59,10 @@ export default function GroupStandings({ groups }: { groups: Group[] }) {
 
                   {/* The Vertical Bar */}
                   <div 
-                    className={`relative w-18 md:w-32 rounded-t-lg transition-all duration-1000 ease-in-out border-x border-t flex flex-col justify-end items-center ${
+                    className={`relative w-18 md:w-32 rounded-t-lg transition-all duration-1000 ease-in-out border-x border-t flex flex-col justify-end items-center backdrop-blur-md brightness-125 saturate-150 ${
                       isLeader 
-                        ? 'bg-yellow-950/40 border-yellow-500/50 shadow-[0_0_30px_rgba(234,179,8,1.2)]' 
-                        : 'bg-gray-900/40 border-gray-700/50 hover:bg-gray-800/60 shadow-[0_0_10px_rgba(0,0,0,1.5)]'
+                        ? 'bg-yellow-950/20 border-yellow-500/50 shadow-[0_0_30px_rgba(234,179,8,1.2)]' 
+                        : 'bg-gray-900/20 border-gray-700/50 hover:bg-gray-800/30 shadow-[0_0_10px_rgba(0,0,0,1.5)]'
                     }`}
                     style={{ 
                       height: `${Math.max(heightPercentage, 2)}%`, // Minimum 2% height to show the bar base
@@ -70,9 +70,9 @@ export default function GroupStandings({ groups }: { groups: Group[] }) {
                   >
                      {/* Fill Gradient */}
                      <div 
-                        className="absolute inset-0 rounded-t-lg opacity-70"
+                        className="absolute inset-0 rounded-t-lg opacity-80"
                         style={{
-                           background: `linear-gradient(to top, ${group.group_color}22, ${group.group_color}bb)`
+                           background: `linear-gradient(to top, ${group.group_color}88, ${group.group_color}cc)`
                         }}
                      ></div>
                      
